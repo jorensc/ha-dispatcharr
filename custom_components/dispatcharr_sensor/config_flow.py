@@ -14,6 +14,7 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
     {
         vol.Required("host"): str,
         vol.Required("port", default=9191): int,
+        vol.Optional("ssl",default=False): bool,
         vol.Required("username"): str,
         vol.Required("password"): str,
     }
